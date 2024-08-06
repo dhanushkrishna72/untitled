@@ -1,5 +1,73 @@
-body{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333;
     margin: 0;
-    background: pink;
+    padding: 0;
+}
+
+header {
+    background-color: #0d47a1; /* Dark blue */
+    color: white;
     text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #0d47a1; /* Dark blue */
+}
+
+#gallery img {
+    width: 100px;
+    height: 100px;
+    margin: 0.5em;
+    border-radius: 10px;
+    border: 2px solid #000; /* Black border */
+}
+
+blockquote {
+    font-style: italic;
+    color: #212121; /* Dark grey */
+}
+
+#proposalButton {
+    background-color: #0d47a1; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#proposalButton:hover {
+    background-color: #1565c0; /* Slightly lighter blue */
+}
+
+footer {
+    background-color: #0d47a1; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Krishna-themed accent */
+#krishnaAccent {
+    background-image: url('krishna.jpg'); /* Image of Krishna */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin: 1em 0;
 }
