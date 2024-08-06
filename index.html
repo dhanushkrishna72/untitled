@@ -3,13 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>untitled</title>
+    <title>Our Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        h2 {
+            color: #6a1b9a;
+        }
+
+        #gallery img {
+            width: 100px;
+            height: 100px;
+            margin: 0.5em;
+            border-radius: 10px;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #555;
+        }
+
+        #proposalButton {
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #proposalButton:hover {
+            background-color: #8e24aa;
+        }
+
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dont know</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id error hic animi veritatis perspiciatis, quae tempora eligendi non ea corporis inventore dolor commodi harum amet? Sint, id placeat. Ullam, omnis.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id error hic animi veritatis perspiciatis, quae tempora eligendi non ea corporis inventore dolor commodi harum amet? Sint, id placeat. Ullam, omnis.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id error hic animi veritatis perspiciatis, quae tempora eligendi non ea corporis inventore dolor commodi harum amet? Sint, id placeat. Ullam, omnis.</p>
+    <header>
+        <h1>Our Story</h1>
+        <p>Welcome to our journey together</p>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Dear [Friend's Name],</p>
+        <p>From the moment we met, I knew you were someone special. Over the years, our friendship has blossomed into something truly amazing. You are my confidant, my partner in crime, and the love of my life.</p>
+    </section>
+
+    <section id="story">
+        <h2>Our Journey</h2>
+        <p>We have shared countless memories together...</p>
+        <ul>
+            <li>First met in school</li>
+            <li>Adventures and trips</li>
+            <li>Support during tough times</li>
+            <li>Unforgettable moments and laughs</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <img src="photo3.jpg" alt="Photo 3">
+    </section>
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <blockquote>"You are my best friend, my human diary, and my other half."</blockquote>
+        <blockquote>"Together, we can conquer anything."</blockquote>
+    </section>
+
+    <section id="proposal">
+        <h2>The Proposal</h2>
+        <p>[Friend's Name], will you marry me?</p>
+        <button id="proposalButton">Click to reveal</button>
+        <div id="proposalMessage" style="display:none;">
+            <p>You mean everything to me. I promise to love and cherish you for the rest of my life.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]</p>
+    </footer>
+
+    <script>
+        document.getElementById("proposalButton").addEventListener("click", function() {
+            var proposalMessage = document.getElementById("proposalMessage");
+            if (proposalMessage.style.display === "none") {
+                proposalMessage.style.display = "block";
+                this.textContent = "Thank you for being my everything";
+            }
+        });
+    </script>
 </body>
 </html>
