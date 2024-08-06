@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #0d47a1; /* Dark blue */
+    background-color: #1e88e5; /* Blue */
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -23,7 +23,7 @@ section {
 }
 
 h2 {
-    color: #0d47a1; /* Dark blue */
+    color: #1e88e5; /* Blue */
 }
 
 #gallery img {
@@ -36,11 +36,11 @@ h2 {
 
 blockquote {
     font-style: italic;
-    color: #212121; /* Dark grey */
+    color: #555; /* Dark grey */
 }
 
 #proposalButton {
-    background-color: #0d47a1; /* Dark blue */
+    background-color: #1e88e5; /* Blue */
     color: white;
     border: none;
     padding: 1em 2em;
@@ -50,11 +50,11 @@ blockquote {
 }
 
 #proposalButton:hover {
-    background-color: #1565c0; /* Slightly lighter blue */
+    background-color: #1565c0; /* Slightly darker blue */
 }
 
 footer {
-    background-color: #0d47a1; /* Dark blue */
+    background-color: #1e88e5; /* Blue */
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -65,9 +65,9 @@ footer {
 
 /* Krishna-themed accent */
 #krishnaAccent {
-    background-image: url('krishna.jpg'); /* Image of Krishna */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
+    background-color: #000; /* Black */
+    color: white;
+    padding: 2em;
     margin: 1em 0;
+    border-radius: 10px;
 }
